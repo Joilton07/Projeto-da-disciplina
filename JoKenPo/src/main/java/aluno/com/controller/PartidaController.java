@@ -1,18 +1,15 @@
 package aluno.com.controller;
 
-import java.util.List;
-
-import aluno.com.model.Armazenar;
-import aluno.com.model.Jogador;
-import aluno.com.model.Login;
+// import aluno.com.model.Armazenar;
+// import aluno.com.model.Login;
 
 public class PartidaController {
 
   
   public String name() {
-    Armazenar a = null;
+    // Armazenar a = null;
     String nome = "ola";
-    Login l = null;
+    // Login l = null;
     // if (jogador1.) {
     //   System.out.println("Empate");
     // }
