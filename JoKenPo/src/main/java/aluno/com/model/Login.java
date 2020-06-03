@@ -1,28 +1,32 @@
 package aluno.com.model;
 
-import java.util.List;
-import java.util.ArrayList;
 
 public class Login {
     
-    List <String> usuario = new ArrayList <> ();
-    List <String> senha = new ArrayList <> ();
+    private String nome;
+    private String senha;
 
-	public List<String> getUsuario() {
-		return usuario;
+    public String getNome() {
+        return nome;
     }
-    
-	public void setUsuario(List<String> usuario) {
-        this.usuario = usuario;
+
+    public Login setNome(String nome) {
+        this.nome = nome;
+        return this;
     }
-    
-	public List<String> getSenha() {
-		return senha;
+
+    public String getSenha() {
+        return senha;
     }
-    
-	public void setSenha(List<String> senha) {
+
+    public Login setSenha(String senha) {
         this.senha = senha;
-	}
+        return this;
+    }
+
+    
+
+	
 
     
 
