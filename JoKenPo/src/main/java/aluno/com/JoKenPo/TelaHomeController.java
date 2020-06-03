@@ -21,5 +21,10 @@ public class TelaHomeController {
 		App.setRoot("telaHome");
 	}
 	
+	@FXML
+	private void trocaParaLogin() throws IOException {
+		App.setRoot("TelaLogin");
+	}
+	
 	
 }
