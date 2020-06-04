@@ -4,4 +4,7 @@ module aluno.com.JoKenPo {
 
     opens aluno.com.JoKenPo to javafx.fxml;
     exports aluno.com.JoKenPo;
+    
+    opens aluno.com.controller to javafx.fxml;
+    exports aluno.com.controller;
 }

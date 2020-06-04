@@ -56,9 +56,9 @@ public class teste {
         
         // // System.out.println(a);
 
-        LoginController lc = new LoginController();
-
-        lc.ControllerDoLogin();
+//        LoginController lc = new LoginController();
+//
+//        lc.ControllerDoLogin();
 
         
         // a.jogadores.add(j1);
