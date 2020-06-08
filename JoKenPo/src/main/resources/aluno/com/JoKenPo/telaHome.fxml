@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-border-color: #4767D9; -fx-border-width: 5px; -fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aluno.com.JoKenPo.TelaHomeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-border-color: #4767D9; -fx-border-width: 5px; -fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aluno.com.controller.TelaHomeController">
   <children>
     <ImageView fitHeight="223.0" fitWidth="551.0" layoutX="317.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
       <image>
@@ -33,7 +33,12 @@
         </Button>
       </children>
     </Pane>
-      <Button onAction="#trocaParaLogin" alignment="CENTER" layoutX="906.0" layoutY="69.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: #4767D9;" text="Login" textAlignment="CENTER" textFill="#f8f8f8">
+      <Button alignment="CENTER" layoutX="906.0" layoutY="69.0" mnemonicParsing="false" onAction="#trocaParaLogin" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: #4767D9;" text="Login" textAlignment="CENTER" textFill="#f8f8f8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="Sair" contentDisplay="CENTER" layoutX="929.0" layoutY="656.0" mnemonicParsing="false" onAction="#SAIR" style="-fx-background-color: #4767D9;" text="Sair" textAlignment="CENTER" textFill="#f5f2f2">
          <font>
             <Font size="20.0" />
          </font>

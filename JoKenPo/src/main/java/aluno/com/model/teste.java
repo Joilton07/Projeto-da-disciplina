@@ -1,6 +1,6 @@
 package aluno.com.model;
 
-import aluno.com.controller.LoginController;
+
 
 public class teste {
     public static void main(String[] args) {

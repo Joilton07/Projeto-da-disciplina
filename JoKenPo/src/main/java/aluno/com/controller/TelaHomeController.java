@@ -1,7 +1,8 @@
-package aluno.com.JoKenPo;
+package aluno.com.controller;
 
 import java.io.IOException;
 
+import aluno.com.JoKenPo.App;
 import javafx.fxml.FXML;
 
 public class TelaHomeController {
@@ -24,6 +25,11 @@ public class TelaHomeController {
 	@FXML
 	private void trocaParaLogin() throws IOException {
 		App.setRoot("TelaLogin");
+	}
+
+	@FXML
+	private void SAIR() {
+		System.exit(0);
 	}
 	
 	
