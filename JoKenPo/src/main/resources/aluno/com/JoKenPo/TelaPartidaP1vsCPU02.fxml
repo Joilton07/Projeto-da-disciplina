@@ -18,17 +18,17 @@
     </ImageView>
     <Pane layoutX="119.0" layoutY="409.0" prefHeight="199.0" prefWidth="198.0" style="-fx-background-color: #4767d9; -fx-background-radius: 100;">
          <children>
-            <TextField fx:id="espacoMaoPlayer" layoutX="14.0" layoutY="87.0" prefHeight="34.0" prefWidth="168.0" />
+            <TextField fx:id="espacoMaoPlayer" layoutX="4.0" layoutY="92.0" prefHeight="34.0" prefWidth="190.0" />
          </children>
     </Pane>
-      <Button fx:id="btnPartidaP1vsCPU" alignment="CENTER" contentDisplay="CENTER" layoutX="495.0" layoutY="486.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="90.0" style="-fx-background-color: #4767D9; -fx-background-radius: 10;" text="Go" textFill="WHITE">
+      <Button fx:id="btnPartidaP1vsCPU" alignment="CENTER" contentDisplay="CENTER" layoutX="470.0" layoutY="562.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: #4767D9; -fx-background-radius: 10;" text="Continuar" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
       <Pane layoutX="785.0" layoutY="409.0" prefHeight="199.0" prefWidth="198.0" style="-fx-background-color: #4767d9; -fx-background-radius: 100;">
          <children>
-            <TextField fx:id="espacoMaoCPU" layoutX="14.0" layoutY="87.0" />
+            <TextField fx:id="espacoMaoCPU" layoutX="22.0" layoutY="92.0" />
          </children>
       </Pane>
       <Label alignment="CENTER" layoutX="79.0" layoutY="344.0" prefHeight="54.0" prefWidth="100.0" text="Player" textFill="#4767d9">
@@ -41,5 +41,14 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
+      <Pane layoutX="366.0" layoutY="282.0" prefHeight="46.0" prefWidth="356.0" style="-fx-background-color: #4767d9; -fx-background-radius: 10;">
+         <children>
+            <TextField fx:id="textoVencedor" alignment="CENTER" layoutX="101.0" layoutY="3.0" prefHeight="40.0" prefWidth="154.0" text="Vencedor">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
   </children>
 </AnchorPane>
