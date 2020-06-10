@@ -8,10 +8,10 @@ package aluno.com.model;
 public class Jogador{
 
     private Integer pontuacao;
-    private Login login = new Login();
+    private Login login;
     private String nome;
 
-    
+    // private Jogador () {}
 
 
     private Jogador(Builder builder) {
@@ -39,7 +39,13 @@ public class Jogador{
         private Integer pontuacao;
         private Login login = new Login();
         private String nome;
-        // public Builder() {
+
+        // public Builder() {}
+        
+        // public Builder(Integer pontuacao, Login login, String nome) {
+        //     this.pontuacao = pontuacao;
+        //     this.login = login;
+        //     this.nome = nome;
         // }
 
         public Builder setPontuacao(Integer pontuacao) {
@@ -62,6 +68,8 @@ public class Jogador{
        public Jogador criarJogador () {
             return new Jogador(this);
        }
+
+       
 
     }
     

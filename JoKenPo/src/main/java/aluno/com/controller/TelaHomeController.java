@@ -2,7 +2,9 @@ package aluno.com.controller;
 
 import java.io.IOException;
 
-import aluno.com.JoKenPo.App;
+// import aluno.com.JoKenPo.App;
+
+
 import javafx.fxml.FXML;
 
 public class TelaHomeController {
