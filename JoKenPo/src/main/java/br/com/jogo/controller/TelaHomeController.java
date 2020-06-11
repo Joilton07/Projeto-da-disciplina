@@ -13,12 +13,7 @@ public class TelaHomeController {
 
 	@FXML
 	private void trocarParaTelaP1vsCPU1() throws IOException {
-		App.setRoot("telaP1vsCPU1");
-	}
-	
-	@FXML
-	private void trocarParaTelaP1vsP2() throws IOException {
-		App.setRoot("telaP1vsP2");
+		App.setRoot("TelaPartidaP1vsCPU");
 	}
 	
 	@FXML
@@ -26,11 +21,6 @@ public class TelaHomeController {
 		App.setRoot("telaHome");
 	}
 	
-	@FXML
-	private void trocaParaLogin() throws IOException {
-		App.setRoot("TelaLogin");
-	}
-
 	@FXML
 	private void SAIR() {
 		System.exit(0);

@@ -17,7 +17,7 @@ public class App extends Application {
     private static Scene scene;
 
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("TelaPartidaP1vsCPU"));
+        scene = new Scene(loadFXML("TelaLogin"));
         stage.setScene(scene);
         stage.show();
     }
@@ -34,7 +34,5 @@ public class App extends Application {
     public static void main(String[] args) {
         launch();
     }
-
-    
 
 }

@@ -46,6 +46,11 @@ public class PartidaController {
     private Button btnPartidaResultado ,btnPartidaP1vsCPU , btnPartidaContinuar; 
     
     @FXML
+	private void voltaParaTelaHome() throws IOException {
+		App.setRoot("TelaHome");
+	}
+    
+    @FXML
     void imgem(){
    
       ArrayList<String> objetos = new ArrayList<String>();

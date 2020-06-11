@@ -9,8 +9,6 @@ import java.util.Random;
 
 import br.com.jogo.model.Login;
 
-
-
 public class Util {
 	
     static public int randomizar() {
@@ -52,5 +50,4 @@ public class Util {
             e.printStackTrace();
         }
     }
-
 }

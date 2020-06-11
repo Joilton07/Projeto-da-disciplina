@@ -1,10 +1,6 @@
 package br.com.jogo.model;
 
 
-
-/**
- * Jogador
- */
 public class Jogador{
 
     private Integer pontuacao;
