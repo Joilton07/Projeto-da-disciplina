@@ -31,7 +31,7 @@
       </Button>
       <Pane layoutX="785.0" layoutY="409.0" prefHeight="199.0" prefWidth="198.0" style="-fx-background-color: #4767d9; -fx-background-radius: 100;">
          <children>
-            <TextField fx:id="espacoMaoCPU" alignment="CENTER" layoutX="15.0" layoutY="81.0" onAction="#palavra" prefHeight="34.0" prefWidth="168.0">
+            <TextField fx:id="espacoMaoCPU" alignment="CENTER" layoutX="15.0" layoutY="81.0"  prefHeight="34.0" prefWidth="168.0">
                <font>
                   <Font size="19.0" />
                </font></TextField>
