@@ -2,9 +2,9 @@ module aluno.com.JoKenPo {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens aluno.com.JoKenPo to javafx.fxml;
-    exports aluno.com.JoKenPo;
+    opens br.com.jogo.joKenPo to javafx.fxml;
+    exports br.com.jogo.joKenPo;
     
-    opens aluno.com.controller to javafx.fxml;
-    exports aluno.com.controller;
+    opens br.com.jogo.controller to javafx.fxml;
+    exports br.com.jogo.controller;
 }

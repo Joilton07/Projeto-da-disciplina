@@ -1,4 +1,4 @@
-package aluno.com.controller;
+package br.com.jogo.joKenPo;
 
 import java.io.IOException;
 

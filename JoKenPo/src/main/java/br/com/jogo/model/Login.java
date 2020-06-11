@@ -1,4 +1,4 @@
-package aluno.com.model;
+package br.com.jogo.model;
 
 
 public class Login {

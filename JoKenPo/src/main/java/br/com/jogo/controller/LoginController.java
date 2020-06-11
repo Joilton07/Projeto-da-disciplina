@@ -1,12 +1,14 @@
-package aluno.com.controller;
+package br.com.jogo.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import aluno.com.model.Armazenar;
-import aluno.com.model.Jogador;
-import aluno.com.model.Login;
+import br.com.jogo.joKenPo.App;
+import br.com.jogo.model.Armazenar;
+import br.com.jogo.model.Jogador;
+import br.com.jogo.model.Login;
+import br.com.jogo.util.Util;
 // import aluno.com.JoKenPo.App;
 // import javafx.event.ActionEvent;
 // import javafx.event.EventHandler;
@@ -33,8 +35,7 @@ public class LoginController {
     */
     @FXML
     public void ControllerDoLogin() throws IOException {
-        Serializacao se = new Serializacao();
-        Deserializacao de = new Deserializacao();
+
         Login log;
         if(login_user.getText().equals("admin") && login_senha.getText().equals("admin")){
             login.setNome(login_user.getText()).setSenha(login_senha.getText());
@@ -42,9 +43,9 @@ public class LoginController {
             t1.add(j1);
             salvar.setJogadores(t1);
             log = new Login(login_user.getText(), login_senha.getText());
-            se.serializacao(log);
+            Util.serializacao(log);
             // System.out.println("Entrou no Jogo");
-            log = de.deserializacao();
+            log = Util.deserializacao();
             App.setRoot("telaHome");
         }else{
             System.out.println("Você não informou a senha certa ou você não pode entra ainda!");    

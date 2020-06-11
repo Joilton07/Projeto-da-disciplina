@@ -1,4 +1,4 @@
-package aluno.com.controller;
+package br.com.jogo.controller;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,9 +8,10 @@ import java.util.List;
 import java.util.Random;
 import java.util.ResourceBundle;
 
-
-import aluno.com.model.Jogador;
-import aluno.com.model.Login;
+import br.com.jogo.joKenPo.App;
+import br.com.jogo.model.Jogador;
+import br.com.jogo.model.Login;
+import br.com.jogo.util.Util;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -43,41 +44,20 @@ public class PartidaController {
 
     @FXML
     private Button btnPartidaResultado ,btnPartidaP1vsCPU , btnPartidaContinuar; 
-
+    
     @FXML
     void imgem(){
+   
+      ArrayList<String> objetos = new ArrayList<String>();
+      objetos.add("Papel");
+      objetos.add("Tesoura");
+      objetos.add("Pedra");
+      String valorPlayer = objetos.get(Util.randomizar());
+      String valorCPU = objetos.get(Util.randomizar());
+   
+      espacoMaoPlayer.setText(valorPlayer);
+      espacoMaoCPU.setText(valorCPU);
 
-      Random rd = new Random();
-      int valor = 0;
-      for (int i = 0; i < 10; i++) {
-         valor = rd.nextInt(3);
-      }
-
-      if (valor == 0) {
-        espacoMaoPlayer.setText("Papel");
-      } else if (valor == 1){
-        espacoMaoPlayer.setText("Tesoura");
-      }else if(valor == 2){
-        espacoMaoPlayer.setText("Pedra");
-      }
-      
-    }
-    @FXML
-    void palavra(){
-
-      Random rd = new Random();
-      int valor = 0;
-      for (int i = 0; i < 10; i++) {
-         valor = rd.nextInt(3);
-      }
-
-      if (valor == 0) {
-        espacoMaoCPU.setText("Papel");
-      } else if (valor == 1){
-        espacoMaoCPU.setText("Tesoura");
-      }else if(valor == 2){
-        espacoMaoCPU.setText("Pedra");
-      }
       
     }
 

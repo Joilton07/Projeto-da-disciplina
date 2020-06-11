@@ -1,4 +1,4 @@
-package aluno.com.model;
+package br.com.jogo.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,12 +20,4 @@ public class Armazenar {
     public void setJogadores(List<Jogador> jogadores) {
         this.jogadores = jogadores;
     }
-
-    
-
-    
-
-    
-
-    
 }
