@@ -62,12 +62,9 @@ public class PartidaController {
 
       String valorPlayer = objetos.get(Util.randomizar());
       String valorCPU = objetos.get(Util.randomizar());
-      
-      String vP = valorPlayer;
-      String vC = valorCPU;
-   
-      espacoMaoPlayer.setText(vP);
-      espacoMaoCPU.setText(vC);
+
+      espacoMaoPlayer.setText(valorPlayer);
+      espacoMaoCPU.setText(valorCPU);
 
       if (valorPlayer.equals("Pedra") && valorCPU.equals("Pedra")) {
     	  alertEmpate();
